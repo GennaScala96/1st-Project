@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My survey form for practice</title>
+  </head>
+  <body>
+    <h1 id="title">Coding Survey form</h1>
+    <p id="description">Small survey to check how much you love coding</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label><br>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+      <label id="email-label" for="email">Email</label><br>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+      <label id="number-label" for="number">Number</label><br>
+        <input type="number" id="number" name="number" min="18" max="99" placeholder="Enter your age"><br>
+      <label for="code">What made you break into programming world?</label><br>
+        <textarea name="code" rows="5" cols="40">Explain here what makes you explore this world..</textarea><br>
+      <label for="choice">How long have you been into it?</label><br>
+        <select name="choice" id="dropdown">
+          <option selected>Choose one</option>
+          <option>Less than 1 year</option>
+          <option>1 year</option>
+          <option>2 years</option>
+          <option>3 years or more</option>
+        </select><br>
+      <label for="button">Where have you been studying programming?</label><br>
+        <input type="radio" name="button" value="Udemy courses">Udemy courses<br>
+        <input type="radio" name="button" value="freeCodeCamp">freeCodeCamp<br>
+        <input type="radio" name="button" value="College">College<br>
+        <input type="radio" name="button" value="YouTube">YouTube<br>
+      <label for="check">What's your favourite part about it?</label><br>
+        <input type="checkbox" value="Responsive Web Design">Resp. Web Design<br>
+        <input type="checkbox" value="Functionality">Functionality<br>
+        <input type="checkbox" value="Client Server-side">Client Server-side<br>
+        <input type="checkbox" value="Databases">Databases<br>
+      <hr>
+      <label for="comment">Any comment?</label><br>
+        <textarea rows="5" cols="40">Add here any comments you like..
+        </textarea><br>
+      <div>
+        <input type="submit" id="submit" value="Submit">
+      </div>
+
+    </form>
+  </body>
+</html>
